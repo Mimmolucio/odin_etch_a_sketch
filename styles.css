@@ -13,15 +13,19 @@ body {
 
 
 #container {
-    height: 100%;
+    width: 320px;
+    height: 320px;
     display: flex;
+    box-sizing: border-box;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #container > div {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     border-style: solid;
     border-width: 1px;
     width: 20px;
