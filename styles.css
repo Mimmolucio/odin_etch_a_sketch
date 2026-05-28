@@ -1,0 +1,29 @@
+html, body {
+    height: 100%;
+}
+
+
+body {
+    display: flex;
+    margin: 0px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container > div {
+    margin: 0;
+    padding: 0;
+    border-style: solid;
+    border-width: 1px;
+    width: 20px;
+    height: 20px;
+}
