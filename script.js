@@ -21,3 +21,7 @@ buttonContainer.addEventListener("click", (e) => {
     container.replaceChildren()
     createGrid(e.target.textContent)
 })
+
+container.addEventListener("mouseover", (e) => {
+    e.target.className = "black";
+})
