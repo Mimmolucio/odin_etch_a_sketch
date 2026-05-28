@@ -4,7 +4,7 @@ const pixel = document.createElement("div")
 function createGrid(length) {
     let i = 0
 
-    while (i < length) {
+    while (i < length*length) {
         container.appendChild(pixel.cloneNode(true))
         i++
     }
