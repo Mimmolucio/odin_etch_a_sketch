@@ -15,3 +15,9 @@ function createGrid(length) {
 }
 
 createGrid(16)
+
+const buttonContainer = document.querySelector("#buttons")
+buttonContainer.addEventListener("click", (e) => {
+    container.replaceChildren()
+    createGrid(e.target.textContent)
+})
