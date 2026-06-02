@@ -17,11 +17,19 @@ function createGrid(length) {
 
 createGrid(16)
 
-const buttonContainer = document.querySelector("#buttons")
-buttonContainer.addEventListener("click", (e) => {
-    container.replaceChildren()
-    createGrid(e.target.textContent)
-})
+const button = document.querySelector("button")
+button.addEventListener("click", (e) => {
+    /* container.replaceChildren()
+    createGrid(prompt()) */
+    const size = prompt()
+
+    if (size <= 100) {
+        container.replaceChildren()
+        createGrid(size)
+    }  
+}
+)
+
 
 container.addEventListener("mouseover", (e) => {
     e.target.classList.remove("gray")
