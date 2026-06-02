@@ -31,8 +31,12 @@ body {
     flex-basis: 0;
     aspect-ratio: 1;
     box-sizing: border-box;
-    border-style: solid;
+    border-style: none;
     border-width: 1px;
+}
+
+.gray {
+    background-color: lightslategray;
 }
 
 .black {

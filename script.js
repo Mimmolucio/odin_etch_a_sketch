@@ -7,6 +7,7 @@ function createGrid(length) {
     const width = 320/length
 
     pixel.style.minWidth = width+"px"
+    pixel.classList.add("gray")
 
     while (i < resolution) {
         container.appendChild(pixel.cloneNode(true))
@@ -23,5 +24,6 @@ buttonContainer.addEventListener("click", (e) => {
 })
 
 container.addEventListener("mouseover", (e) => {
-    e.target.className = "black";
+    e.target.classList.remove("gray")
+    e.target.classList.add("black")
 })
